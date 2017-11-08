@@ -1,0 +1,10 @@
+for file in $(ls $dir)
+do
+	[ -d $file ] && echo " = = = $file = = = "
+    [ -d $file ] && cd $file
+    git pull origin master
+    cd ..
+    echo ""
+    echo ""
+    echo ""
+done
